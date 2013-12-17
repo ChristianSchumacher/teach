@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :area_admin_id,'Abt.Leiter' %><br>
-    <%= f.number_field :area_admin_id %>
+    <%= f.collection_select :area_admin_id, User.order(:name).all, :id, :name%>
   </div>
   <div class="actions">
     <%= f.submit %>
