@@ -1,4 +1,6 @@
 Teach::Application.routes.draw do
+  resources :tests
+
   resources :users
 
   resources :areas
