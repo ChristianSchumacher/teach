@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
+Beschreibung
+
+
+
+
+
   <div class="field">
     <%= f.label :user_id %><br>
     <%= f.number_field :user_id %>
   </div>
-  <div class="field">
-    <%= f.label :passed %><br>
-    <%= f.check_box :passed %>
-  </div>
-  <div class="field">
-    <%= f.label :area_id %><br>
-    <%= f.text_field :area_id %>
-  </div>
+
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit, 'Pruefung absenden' %>
   </div>
 <% end %>

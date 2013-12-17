@@ -12,9 +12,11 @@ class TestsController < ApplicationController
   def show
   end
 
-  # GET /tests/new
   def new
-    @test = Test.new
+    @test       = Test.new
+    @area       = Area.find(1)
+    @questions  = Question.where("area_id == #{@area.id}")
+    @questions  = Question.find(:all, :order => "RANDOM()", :limit => 2)
   end
 
   # GET /tests/1/edit

@@ -1,4 +1,5 @@
 <h1>Fragenkatalog</h1>
+<h2>Insgesamt <%=@questions.count%> Fragen aus <%=@areas.count%> Bereichen</h2>
 
 <table>
   <thead>
@@ -28,8 +29,8 @@
         <td><%= question.answer_4 %></td>
         <td><%= question.answer_5 %></td>
         <td><%= question.solution %></td>
-        <td><%= question.author_id %></td>
-        <td><%= question.area_id %></td>
+        <td><%= User.find(question.author_id).name %></td>
+        <td><%= Area.find(question.area_id).name %></td>
         <td><%= link_to 'Show', question %></td>
         <td><%= link_to 'Edit', edit_question_path(question) %></td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>

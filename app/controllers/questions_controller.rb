@@ -4,7 +4,8 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    @questions = Question.all
+    @questions  = Question.all
+    @areas      = Area.all
   end
 
   # GET /questions/1
