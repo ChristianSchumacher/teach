@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  question: MyText
+  answer_1: MyString
+  answer_2: MyString
+  answer_3: MyString
+  answer_4: MyString
+  answer_5: MyString
+  solution: 1
+  author_id: 1
+  area_id: 1
+
+two:
+  question: MyText
+  answer_1: MyString
+  answer_2: MyString
+  answer_3: MyString
+  answer_4: MyString
+  answer_5: MyString
+  solution: 1
+  author_id: 1
+  area_id: 1
