@@ -12,6 +12,10 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :salutation,'Anrede' %><br>
+    <%= f.text_field :salutation %>
+  </div>
+  <div class="field">
     <%= f.label :first_name,'Vorname' %><br>
     <%= f.text_field :first_name %>
   </div>
@@ -20,8 +24,8 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :department,'Abteilung' %><br>
-    <%= f.collection_select :department, Area.order(:name).all, :id, :name%>
+    <%= f.label :department_id,'Abteilung' %><br>
+    <%= f.collection_select :department_id, Area.order(:name).all, :id, :name%>
   </div>
   <div class="field">
     <%= f.label :position %><br>
