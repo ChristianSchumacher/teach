@@ -12,15 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :first_name %><br>
+    <%= f.label :first_name,'Vorname' %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :department %><br>
+    <%= f.label :name,'Nachname' %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :department,'Abteilung' %><br>
     <%= f.text_field :department %>
   </div>
   <div class="field">
@@ -36,8 +36,8 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :system_admin %><br>
-    <%= f.number_field :system_admin %>
+    <%= f.label :system_admin,'System-Admin?' %><br>
+    <%= f.check_box :system_admin %>
   </div>
   <div class="actions">
     <%= f.submit %>
