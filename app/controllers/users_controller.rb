@@ -28,6 +28,9 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        @current_user = 1
+        History.create({"action" =>"add", "user_id" => @current_user, "comment" => 'Benutzer wurde angelegt'})
+
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else

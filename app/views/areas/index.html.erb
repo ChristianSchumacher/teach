@@ -20,7 +20,7 @@
         <td><%= area.name %></td>
         <td><%= area.short_name %></td>
         <td><%= area.description %></td>
-        <td><%= area.area_admin_id %></td>
+        <td><%= User.find(area.area_admin_id).name %></td>
         <td><%= link_to 'Show', area %></td>
         <td><%= link_to 'Edit', edit_area_path(area) %></td>
         <td><%= link_to 'Destroy', area, method: :delete, data: { confirm: 'Are you sure?' } %></td>
