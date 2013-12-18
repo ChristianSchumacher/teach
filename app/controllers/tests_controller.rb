@@ -15,7 +15,7 @@ class TestsController < ApplicationController
   def new
     @test       = Test.new
     @area       = Area.find(1)
-    @questions  = Question.where("area_id == #{@area.id}")
+    #@questions  = Question.where("area_id == #{@area.id}")
     @questions  = Question.find(:all, :order => "RANDOM()", :limit => 2)
   end
 

@@ -1,8 +1,7 @@
 <%= form_for(@test) do |f| %>
   <% if @test.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@test.errors.count, "error") %> prohibited this test from being saved:</h2>
-
+      <h2><%= pluralize(@test.errors.count, "Fehler") %> prohibited this test from being saved:</h2>
       <ul>
       <% @test.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -13,17 +12,20 @@
 
 Beschreibung
 
+<%#= render :partial => 'questions/quest' %>
+
+
+<% @questions.each do |question|%>
+  <%= render 'questions/form', :question => @question %>
+<% end %>
 
 
 
 
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
 
 
+  <%= f.hidden_field :user_id %>
   <div class="actions">
-    <%= f.submit, 'Pruefung absenden' %>
+    <%= f.submit 'Pruefung absenden' %>
   </div>
 <% end %>
