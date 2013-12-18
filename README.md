@@ -9,5 +9,12 @@ Installationsanleitung
 - 3. rake db:migrate
 - 4.	rake db:setup
 
+
+
+ToDo
+- [ ] UTF-8 Fehler entfernen um Umlaute nutzen zu können
+- [ ] Login Systen einbauen 
+- [ ] Test Model erstellen (In Arbeit CS)
+- [ ] Übersicht-Seite erstellen über alle Schulungen in Prouzent
 MfG
 CS
