@@ -23,7 +23,7 @@
         <td><%= User.find(area.area_admin_id).name %></td>
         <td><%= link_to(image_tag('show.png', :size => "30x30",:title => "Fragenkatalog anzeigen"), area) %></td>
         <td><%= link_to(image_tag('edit.png', :size => "30x30",:title => "Fragenkatalog bearbeiten"), edit_area_path(area)) %></td>
-        <td><%= link_to(image_tag('del.png', :size => "30x30",:title => "Fragenkatalog löschen"), area, method: :delete, data: { confirm: 'Are you sure?' }) %></td>
+        <td><%= link_to(image_tag('del.png', :size => "30x30",:title => "Fragenkatalog löschen"), area, method: :delete, data: { confirm: 'Sind Sie sicher?' }) %></td>
       </tr>
     <% end %>
   </tbody>
