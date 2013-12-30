@@ -13,14 +13,14 @@
 
   <div class="field">
     <%= f.label :salutation,'Anrede' %><br>
-    <%= f.text_field :salutation %>
+   <%= f.select :salutation, [['Herr', 'Herr'], ['Frau', 'Frau'], ['Dr.', 'Dr.'], ['Dr.Prof', 'Dr.Prof'], ['Dipl-Ing.', 'Dipl-Ing.']]%>
   </div>
   <div class="field">
-    <%= f.label :first_name,'Vornamäe' %><br>
+    <%= f.label :first_name,'Vorname' %><br>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :name,'Nachäname' %><br>
+    <%= f.label :name,'Nachname' %><br>
 
     <%= f.text_field :name %>
   </div>

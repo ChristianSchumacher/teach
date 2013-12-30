@@ -6,7 +6,7 @@
       <th>Anrede</th>
       <th>Vorname</th>
       <th>Nachname</th>
-      <th>Position</th>
+      <th>Bild</th>
       <th>Email</th>
       <th>Abteilung</th>
       <th></th>
@@ -18,13 +18,16 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name %></td>
+        <td><%= user.salutation %></td>
         <td><%= user.first_name %></td>
-        <td><%= user.department_id %></td>
-        <td><%= user.position %></td>
-        <td><%= user.password %></td>
+        <td><%= user.name %></td>
+        <% if user.image.nil? %>
+        <td></td>
+        <% else %>
+        <td align="center"><%= image_tag("#{user.image}", :size => "50x50") %></td>
+        <% end %>
         <td><%= user.email %></td>
-        <td><%= user.system_admin %></td>
+        <td><%= user.department_id %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
