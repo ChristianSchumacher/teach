@@ -1,14 +1,11 @@
-<h1>Listing histories</h1>
+<h1>History</h1>
 
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>Action</th>
-      <th>User</th>
-      <th>Comment</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Benutzer</th>
+      <th>Beschreibung</th>
     </tr>
   </thead>
 
@@ -16,16 +13,13 @@
     <% @histories.each do |history| %>
       <tr>
         <td><%= history.action %></td>
-        <td><%= history.user_id %></td>
+        <% unless history.user.nil? %>
+        <td align="center"><%= image_tag(history.user.image, :size => "50x50", :title => history.user.name) %></td>
+        <% else %>
+        <td></td>
+        <% end %>
         <td><%= history.comment %></td>
-        <td><%= link_to 'Show', history %></td>
-        <td><%= link_to 'Edit', edit_history_path(history) %></td>
-        <td><%= link_to 'Destroy', history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New History', new_history_path %>
