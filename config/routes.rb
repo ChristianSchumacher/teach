@@ -1,4 +1,6 @@
 Teach::Application.routes.draw do
+  resources :navitems
+
   resources :tests
 
   resources :users

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131230181247) do
+ActiveRecord::Schema.define(version: 20131230214951) do
 
   create_table "areas", force: true do |t|
     t.string   "name"
@@ -26,6 +26,14 @@ ActiveRecord::Schema.define(version: 20131230181247) do
     t.string   "action"
     t.integer  "user_id"
     t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "navitems", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.integer  "rang"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
