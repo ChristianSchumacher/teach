@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131230214951) do
+ActiveRecord::Schema.define(version: 20131230215935) do
 
   create_table "areas", force: true do |t|
     t.string   "name"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131230214951) do
     t.integer  "area_admin_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "file"
   end
 
   create_table "histories", force: true do |t|
