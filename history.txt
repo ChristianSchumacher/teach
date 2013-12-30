@@ -1,0 +1,260 @@
+    1  git
+    2  git clone ssh git@github.com:ChristianSchumacher/test1.git
+    3  git clone git@github.com:ChristianSchumacher/test1.git
+    4  git clone git@github.com:ChristianSchumacher/test1.git
+    5  cd .ssh/
+    6  l
+    7  ls
+    8  ssh-keygen -t rsa -C "schumacherchristian85@web.de"
+    9  ls
+   10  mkdir git_ordner
+   11  cd git_ordner/
+   12  cd ..
+   13  rm -f git_ordner/
+   14  rm -r -f git_ordner/
+   15  cd 
+   16  mkdir git_ordner
+   17  gd git_ordner/
+   18  cd git_ordner/
+   19  git clone git@git:christianschumacher/test1.git
+   20  git clone git@github.com:christianschumacher/test1.git
+   21  ssh -T git@github.com
+   22  exit
+   23  cd --
+   24  cd ..
+   25  cd ..
+   26  cd ..
+   27  dir
+   28  ls
+   29  cd ..
+   30  dir
+   31  ls
+   32  exit
+   33  exit
+   34  ssh-keygen -t rsa -C "schumacherchristian85@web.de"
+   35  ssh -T git@github.com
+   36  git clone git://github.com/ChristianSchumacher/test1.git
+   37  vi a
+   38  git status
+   39  ls
+   40  cd test1/
+   41  cd ..
+   42  mv a test1/
+   43  cd test 1
+   44  cd test1/
+   45  ls
+   46  git status
+   47  git add a
+   48  git status
+   49  git commit -m "Neue Testdatei erstellt fuer klaus"
+   50  git status
+   51  git push origin
+   52  git push origin master
+   53  git remote add origin https://github.co/christianschumacher/test1.git
+   54  ls
+   55  ls -lisa
+   56  vi .git
+   57  cd .git
+   58  ls
+   59  vi config 
+   60  cd ..
+   61  ls
+   62  git push origin master
+   63  cd .git
+   64  vi config 
+   65  cd ..
+   66  git push origin master
+   67  git push
+   68  cd .git
+   69  vi config 
+   70  cd ..
+   71  git push
+   72  git push origin 
+   73  git status
+   74  cd ..
+   75  git clone git@github.com/klkeusch/mfps.git
+   76  git -v
+   77  git --v
+   78  git --version
+   79  git clone git:git@github.com/klkeusch/mfps.git
+   80  git clone git:git@github.com/klkeusch/mfps.git
+   81  git clone git://git@github.com/klkeusch/mfps.git
+   82  git clone git://git@github.com/klkeusch/mfps.git
+   83  git clone git://git@github.com/klkeusch/mfps.git
+   84  exit
+   85  ls
+   86  cd test1/
+   87  git st
+   88  git statsu
+   89  git status
+   90  git push 
+   91  git push origin
+   92  exit
+   93  git 
+   94  cd ..
+   95  cd *
+   96  cd ~
+   97  cd test1/
+   98  cd ..
+   99  git clone git:\\github.com\christianschumacher\test1.git
+  100  git clone git:\\github.com\christianschumacher\test1.git test2
+  101  mkdir test_2
+  102  cd test_2/
+  103  git clone git:\\github.com\christianschumacher\test1.git
+  104  ls
+  105  git clone git://github.com\christianschumacher/test1.git
+  106  git clone git://github.com/christianschumacher/test1.git
+  107  git clone git://github.com:christianschumacher/test1.git
+  108  git clone git://github.com/Christianschumacher/test1.git
+  109  git clone git://github.com/ChristianSchumacher/test1.git
+  110  cd test1/
+  111  vi a
+  112  git add .
+  113  git commit -m "Test datei erstellt"
+  114  git push
+  115  cd .git
+  116  vi config 
+  117  cd ..
+  118  git status
+  119  git push 
+  120  git 
+  121  cd ..
+  122  cd *
+  123  cd ~
+  124  cd test1/
+  125  cd ..
+  126  git clone git:\\github.com\christianschumacher\test1.git
+  127  git clone git:\\github.com\christianschumacher\test1.git test2
+  128  mkdir test_2
+  129  cd test_2/
+  130  git clone git:\\github.com\christianschumacher\test1.git
+  131  ls
+  132  git clone git://github.com\christianschumacher/test1.git
+  133  git clone git://github.com/christianschumacher/test1.git
+  134  git clone git://github.com:christianschumacher/test1.git
+  135  git clone git://github.com/Christianschumacher/test1.git
+  136  git clone git://github.com/ChristianSchumacher/test1.git
+  137  cd test1/
+  138  vi a
+  139  git add .
+  140  git commit -m "Test datei erstellt"
+  141  git push
+  142  cd .git
+  143  vi config 
+  144  cd ..
+  145  git status
+  146  git push 
+  147  git push origin master
+  148  xit
+  149  exit
+  150  exit
+  151  cd ..
+  152  cd ..
+  153  cd git/
+  154  ls
+  155  git clone git:\\github.com\ChristianSchumacher\test1.git
+  156  git clone https://github.com/ChristianSchumacher/test1.git
+  157  bundle instal
+  158  bundle install
+  159  exit
+  160  cd ..
+  161  cd ..
+  162  cd git/
+  163  cd test1/
+  164  bundle install
+  165  bundle install
+  166  rails s
+  167  rails c
+  168  exit
+  169  cd ..
+  170  cd ..
+  171  cd git/
+  172  l
+  173  ls
+  174  rm -r test1/
+  175  rm -r -f test1/
+  176  ls
+  177  git cofig
+  178  git config
+  179  git config --global
+  180  git info
+  181  git mailinfo
+  182  exit
+  183  cd git/
+  184  lsls
+  185  ls
+  186  exit
+  187  rake db:migrate
+  188  bundle update
+  189  rake db:migrate
+  190  git st
+  191  git status
+  192  git add .
+  193  git commit -m "Erweiterung erstellt"
+  194  git push 
+  195  rails c
+  196  bundle install
+  197  rails g uploader image
+  198  rails g migration add_image_to_users image:string
+  199  rake db:migrate
+  200  rake db:seed
+  201  git st
+  202  git config --global alias.ci commit
+  203  git config --global alias.co checkout
+  204  git config --global alias.st status
+  205  git config --global alias.br branch
+  206  git st
+  207  git add .
+  208  cd ..
+  209  cd ..
+  210  cd ..
+  211  git st
+  212  git add .
+  213  git commit -m "Uploader fuer Bilder Hinzugefuegt""
+  214  "
+  215  git push
+  216  rails c
+  217  git st
+  218  git add .
+  219  git commit - "User bild upload verbessert und index verbessert"
+  220  git commit - m "User bild upload verbessert und index verbessert"
+  221  git commit -mm "User bild upload verbessert und index verbessert"
+  222  git commit -m "User bild upload verbessert und index verbessert"
+  223  git push 
+  224  User.last
+  225  rails c
+  226  git st
+  227  git add .
+  228  git st
+  229  git log
+  230  git reset --hard
+  231  git st
+  232  git add .
+  233  git st
+  234  git st
+  235  git add .
+  236  git commit -m "Testfragen fuer die seed datei erstellt"
+  237  git push
+  238  git st
+  239  exit
+  240  pwd
+  241  cd ..
+  242  cd ..
+  243  ls
+  244  cd ..
+  245  rails s
+  246  rails s
+  247  exit
+  248  cd ..
+  249  rails c
+  250  rake db:reset
+  251  rails g scaffold navitem name:string url:string rang:integer
+  252  rake db:migrate
+  253  rake db:migrate
+  254  rake db:reset
+  255  git st
+  256  git add .
+  257  git comit -m "navigation hinzugefuegt"
+  258  git commit -m "navigation hinzugefuegt"
+  259  git st
+  260  history > history.txt
