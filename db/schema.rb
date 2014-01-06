@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131230215935) do
+ActiveRecord::Schema.define(version: 20140106182158) do
 
   create_table "areas", force: true do |t|
     t.string   "name"
@@ -46,11 +46,15 @@ ActiveRecord::Schema.define(version: 20131230215935) do
     t.string   "answer_3"
     t.string   "answer_4"
     t.string   "answer_5"
-    t.integer  "solution"
     t.integer  "author_id"
     t.integer  "area_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "correct_1"
+    t.boolean  "correct_2"
+    t.boolean  "correct_3"
+    t.boolean  "correct_4"
+    t.boolean  "correct_5"
   end
 
   create_table "tests", force: true do |t|
