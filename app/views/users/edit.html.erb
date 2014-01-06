@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<%= link_to(image_tag('edit.png', :size => "30x30",:title => "Benutzer bearbeiten"),  edit_user_path(@user)) %> |
+<%= link_to(image_tag('back.png', :size => "30x30",:title => "zurück"), users_path) %>

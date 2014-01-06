@@ -13,31 +13,27 @@
 
   <div class="field">
     <%= f.label :question, 'Frage' %><br>
-    <%= f.text_area :question %>
+    <%= f.text_area :question %> 
   </div>
   <div class="field">
     <%= f.label :answer_1, 'Antwort 1' %><br>
-    <%= f.text_field :answer_1 %>
+    <%= f.text_field :answer_1 %>Richtig? <%= f.check_box :correct_1 %>
   </div>
   <div class="field">
     <%= f.label :answer_2, 'Antwort 2' %><br>
-    <%= f.text_field :answer_2 %>
+    <%= f.text_field :answer_2 %>Richtig? <%= f.check_box :correct_2 %>
   </div>
   <div class="field">
     <%= f.label :answer_3, 'Antwort 3' %><br>
-    <%= f.text_field :answer_3 %>
+    <%= f.text_field :answer_3 %>Richtig? <%= f.check_box :correct_3 %>
   </div>
   <div class="field">
     <%= f.label :answer_4, 'Antwort 4' %><br>
-    <%= f.text_field :answer_4 %>
+    <%= f.text_field :answer_4 %>Richtig? <%= f.check_box :correct_4 %>
   </div>
   <div class="field">
     <%= f.label :answer_5, 'Antwort 5' %><br>
-    <%= f.text_field :answer_5 %>
-  </div>
-  <div class="field">
-    <%= f.label :solution, 'Loesungs-Code' %><br>
-    <%= f.number_field :solution %>
+    <%= f.text_field :answer_5 %>Richtig? <%= f.check_box :correct_5 %>
   </div>
   <div class="field">
     <%= f.label :author_id, 'Author' %><br>

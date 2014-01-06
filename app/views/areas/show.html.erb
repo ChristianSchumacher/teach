@@ -20,5 +20,8 @@
   <%= @area.area_admin_id %>
 </p>
 
-<%= link_to 'bearbeiten', edit_area_path(@area) %> |
-<%= link_to 'zurueck', areas_path %>
+
+
+
+<%= link_to(image_tag('edit.png', :size => "30x30",:title => "Fragenkatalog bearbeiten"),  edit_area_path(@area)) %> |
+<%= link_to(image_tag('back.png', :size => "30x30",:title => "zurück"), areas_path) %>

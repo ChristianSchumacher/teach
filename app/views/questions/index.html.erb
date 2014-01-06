@@ -10,7 +10,6 @@
       <th>Antwort 3</th>
       <th>Antwort 4</th>
       <th>Antwort 5</th>
-      <th>Loesung</th>
       <th>Ersteller</th>
       <th>Bereich</th>
       <th></th>
@@ -28,7 +27,6 @@
         <td><%= question.answer_3 %></td>
         <td><%= question.answer_4 %></td>
         <td><%= question.answer_5 %></td>
-        <td><%= question.solution %></td>
         <td><%= User.find(question.author_id).name %></td>
         <td><%= Area.find(question.area_id).name %></td>
         <td><%= link_to(image_tag('show.png', :size => "30x30",:title => "Frage anzeigen"), question) %></td>
