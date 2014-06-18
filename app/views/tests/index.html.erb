@@ -28,4 +28,7 @@
 
 <br>
 
-<%= link_to 'New Test', new_test_path %>
+<% @areas.each do |area| %>
+<%= link_to area.name, new_test_path(:area_id => area.id)%> <br />
+
+<% end %>

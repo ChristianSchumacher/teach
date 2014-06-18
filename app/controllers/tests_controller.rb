@@ -5,6 +5,7 @@ class TestsController < ApplicationController
   # GET /tests.json
   def index
     @tests = Test.all
+    @areas = Area.all
   end
 
   # GET /tests/1
@@ -14,9 +15,8 @@ class TestsController < ApplicationController
 
   def new
     @test       = Test.new
-    @area       = Area.find(1)
-    #@questions  = Question.where("area_id == #{@area.id}")
-    @questions  = Question.limit(2).order("RANDOM()")
+    @area       = Area.find(params[:area_id])
+    @questions  = Question.where("area_id == #{@area.id}").limit(5).order("RANDOM()")
   end
 
   # GET /tests/1/edit
