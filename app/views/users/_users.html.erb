@@ -1,0 +1,35 @@
+<table border="1"> 
+  <thead>
+    <tr>
+   	  <th>Aktion</th>
+      <th>Anrede</th>
+      <th>Vorname</th>
+      <th>Nachname</th>
+      <th>Bild</th>
+      <th>Email</th>
+      <th>Regestriert am</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+      	<td>
+      		<%= link_to(image_tag('edit_user.png', :size => "30x30",:title => "Benutzer bearbeiten"), edit_user_path(user)) %>
+        	<%= link_to(image_tag('rm_user.png', :size => "30x30",:title => "Benutzer löschen"), user, method: :delete, data: { confirm: 'Sind Sie sicher?' }) %>
+       	</td>
+        <td><%= user.salutation %></td>
+        <td><%= user.first_name %></td>
+        <td><%= user.name %></td>
+        <% if user.image.nil? %>
+        <td></td>
+        <% else %>
+        <td align="center"><%= image_tag("#{user.image}", :size => "50x50") %></td>
+        <% end %>
+        <td><%= user.email %></td>
+        <td><%= user.department_id %></td>
+        <td><%= user.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

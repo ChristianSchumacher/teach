@@ -21,16 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :name,'Nachname' %><br>
-
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :department_id,'Abteilung' %><br>
-    <%= f.collection_select :department_id, Area.order(:name).all, :id, :name%>
-  </div>
-  <div class="field">
-    <%= f.label :position %><br>
-    <%= f.text_field :position %>
   </div>
   <div class="field">
     <%= f.label :password %><br>
@@ -41,14 +32,10 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :system_admin,'System-Admin?' %><br>
-    <%= f.check_box :system_admin %>
-  </div>
-  <div class="field">
     <%= f.label :image,'Benutzerbild' %><br>
     <%= f.file_field :image %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'speichern'%>
   </div>
 <% end %>
