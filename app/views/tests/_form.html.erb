@@ -13,13 +13,15 @@
 Beantworten Sie die <%= @questions.count %> Fragen richtig.<br>
 Danach werden Sie zu Ihren Zertifikat weitergeleitet.<br>
 <br>
+<% i=1%>
 <% @questions.each do |question|%>
-<b>Frage Nr_: </b><%= question.question %><br/>
+<b>Frage Nr.<%=i%>: </b><%= question.question %><br/>
 Antwort 1: <%= question.answer_1 %> <%= check_box_tag 'answer_1'%>
 Antwort 2: <%= question.answer_2 %> <%= check_box_tag 'answer_2'%>
 Antwort 3: <%= question.answer_3 %> <%= check_box_tag 'answer_3'%>
 Antwort 4: <%= question.answer_4 %> <%= check_box_tag 'answer_4'%>
 Antwort 5: <%= question.answer_5 %> <%= check_box_tag 'answer_5'%>
+<% i+=1%>
 <br>
 <br>
 <% end %>
