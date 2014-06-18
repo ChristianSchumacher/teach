@@ -1,3 +1,4 @@
+<h1>zum Thema <%= @area.name%></h1>
 <%= form_for(@test) do |f| %>
   <% if @test.errors.any? %>
     <div id="error_explanation">
@@ -9,23 +10,23 @@
       </ul>
     </div>
   <% end %>
-
-Beschreibung
-
-<%#= render :partial => 'questions/quest' %>
-
-
+Beantworten Sie die <%= @questions.count %> Fragen richtig.<br>
+Danach werden Sie zu Ihren Zertifikat weitergeleitet.<br>
+<br>
 <% @questions.each do |question|%>
-  <%= render 'questions/form', :question => @question %>
+<b>Frage: </b><%= question.question %><br/>
+Antwort 1: <%= question.answer_1 %> <%= check_box_tag 'answer_1'%>
+Antwort 2: <%= question.answer_2 %> <%= check_box_tag 'answer_2'%>
+Antwort 3: <%= question.answer_3 %> <%= check_box_tag 'answer_3'%>
+Antwort 4: <%= question.answer_4 %> <%= check_box_tag 'answer_4'%>
+Antwort 5: <%= question.answer_5 %> <%= check_box_tag 'answer_5'%>
+<br>
+<br>
 <% end %>
 
 
 
 
 
-
-  <%= f.hidden_field :user_id %>
-  <div class="actions">
-    <%= f.submit 'Pruefung absenden' %>
-  </div>
+ 
 <% end %>
