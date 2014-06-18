@@ -4,26 +4,24 @@
 <table border="1">
   <thead>
     <tr>
+      <th>Aktion</th>
       <th>Name</th>
       <th>Abt.Kuerzel</th>
       <th>Beschreibung</th>
-      <th>Katalog-Admin</th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <% @areas.each do |area| %>
       <tr>
+        <td>
+        	<%= link_to(image_tag('show.png', :size => "30x30",:title => "Fragenkatalog anzeigen"), area) %>
+        	<%= link_to(image_tag('edit.png', :size => "30x30",:title => "Fragenkatalog bearbeiten"), edit_area_path(area)) %>
+        	<%= link_to(image_tag('del.png', :size => "30x30",:title => "Fragenkatalog löschen"), area, method: :delete, data: { confirm: 'Sind Sie sicher?' }) %>
+        </td>
         <td><%= area.name %></td>
         <td><%= area.short_name %></td>
         <td><%= area.description %></td>
-        <td><%= User.find(area.area_admin_id).name %></td>
-        <td><%= link_to(image_tag('show.png', :size => "30x30",:title => "Fragenkatalog anzeigen"), area) %></td>
-        <td><%= link_to(image_tag('edit.png', :size => "30x30",:title => "Fragenkatalog bearbeiten"), edit_area_path(area)) %></td>
-        <td><%= link_to(image_tag('del.png', :size => "30x30",:title => "Fragenkatalog löschen"), area, method: :delete, data: { confirm: 'Sind Sie sicher?' }) %></td>
       </tr>
     <% end %>
   </tbody>

@@ -27,8 +27,7 @@
         <td align="center"><%= image_tag("#{user.image}", :size => "50x50") %></td>
         <% end %>
         <td><%= user.email %></td>
-        <td><%= user.department_id %></td>
-        <td><%= user.created_at %></td>
+        <td><%= user.created_at.strftime("%d.%m.%Y") %></td>
       </tr>
     <% end %>
   </tbody>
