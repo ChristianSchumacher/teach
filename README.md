@@ -12,12 +12,7 @@ Installationsanleitung
 
 
 ToDo
-- [ ] UTF-8 Fehler entfernen um Umlaute nutzen zu können
-- [ ] Login Systen einbauen User Bereich 
-- [ ] sollen Profilbilder erstellen können
-- [ ] Test Model erstellen (In Arbeit CS)
-- [ ] Übersicht-Seite erstellen über alle Schulungen in Prouzent
-
-
-MfG
+- [ ] PDF´s sollen wie ein javascript Alert eingebaut werden
+- [ ] Login Systen einbauen User Bereich
+- [ ] Test Model Create erstellen in Abhängigkeit ob die x Fragen richtig sind.
 CS
