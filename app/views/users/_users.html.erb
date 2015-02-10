@@ -21,8 +21,8 @@
         <td><%= user.salutation %></td>
         <td><%= user.first_name %></td>
         <td><%= user.name %></td>
-        <% if user.image.nil? %>
-        <td></td>
+        <% if user.image.blank? %>
+        <td><%= image_tag 'no_image.png', :size => "30x30", :title => "Kein Bild vorhanden" %></td>
         <% else %>
         <td align="center"><%= image_tag("#{user.image}", :size => "50x50") %></td>
         <% end %>
